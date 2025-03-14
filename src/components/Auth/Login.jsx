@@ -12,7 +12,7 @@ const OperationTracker = () => {
   const [currentStep, setCurrentStep] = useState(0); // 0: Not started, 1-5: Steps
   const [operationStarted, setOperationStarted] = useState(false);
   const [operationCompleted, setOperationCompleted] = useState(false);
-  const [boatPosition, setBoatPosition] = useState([13.08, 80.29]); // Chennai port initial position [lat, lng]
+  const [boatPosition, setBoatPosition] = useState([13.10403,80.29366]); // Chennai port initial position [lat, lng]
   const [showLogs, setShowLogs] = useState(false);
   const [logs, setLogs] = useState([]);
   const [showHINInput, setShowHINInput] = useState(false);
@@ -21,7 +21,7 @@ const OperationTracker = () => {
   const [showBoundaryAlert, setShowBoundaryAlert] = useState(false);
   const [boundaryReached, setBoundaryReached] = useState(false);
   
-  const sourcePosition = [13.0827, 80.2707]; // Chennai port
+  const sourcePosition = [13.10403,80.29366]; // Chennai port
   const destinationPosition = [13.094861, 80.522232]; // Destination in the sea
   const boundaryRadius = 1000; // 10km boundary in meters (Leaflet uses meters)
   
