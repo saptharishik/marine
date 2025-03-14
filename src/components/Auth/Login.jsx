@@ -21,8 +21,8 @@ const OperationTracker = () => {
   const [showBoundaryAlert, setShowBoundaryAlert] = useState(false);
   const [boundaryReached, setBoundaryReached] = useState(false);
   
-  const sourcePosition = [13.08, 80.29]; // Chennai port
-  const destinationPosition = [13.14, 80.34]; // Destination in the sea
+  const sourcePosition = [13.0827, 80.2707]; // Chennai port
+  const destinationPosition = [13.094861, 80.522232]; // Destination in the sea
   const boundaryRadius = 1000; // 10km boundary in meters (Leaflet uses meters)
   
   // Calculate distance between two points in meters
