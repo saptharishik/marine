@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
+
 
 // Components
 import Login from './components/Auth/Login';
@@ -19,7 +19,7 @@ const PrivateRoute = ({ children }) => {
 function App() {
   return (
     <Router>
-      <AuthProvider>
+      
         <Routes>
           <Route path="/login" element={<Login />} />
           {/* <Route path="/signup" element={<SignUp />} /> */}
@@ -39,7 +39,7 @@ function App() {
           
           <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
-      </AuthProvider>
+      
     </Router>
   );
 }
