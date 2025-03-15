@@ -7,11 +7,9 @@ import Login from './components/Auth/Login';
 
 // Private route wrapper
 const PrivateRoute = ({ children }) => {
-  const { currentUser } = useAuth();
+
   
-  if (!currentUser) {
-    return <Navigate to="/login" />;
-  }
+  
   
   return children;
 };
@@ -21,23 +19,13 @@ function App() {
     <Router>
       
         <Routes>
-          <Route path="/login" element={<Login />} />
-          {/* <Route path="/signup" element={<SignUp />} /> */}
+          <Route path="/" element={<Login />} />
           
-            {/* <Route path="/chair-activity/:chairId" element={<ChairActivityLog />} />     */}
-          <Route path="/chair-selection" element={
-            <PrivateRoute>
-              {/* <ChairSelection /> */}
-            </PrivateRoute>
-          } />
           
-          <Route path="/chair/:chairId" element={
-            <PrivateRoute>
-              {/* <ChairMonitor /> */}
-            </PrivateRoute>
-          } />
           
-          <Route path="*" element={<Navigate to="/login" />} />
+          
+          
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       
     </Router>
