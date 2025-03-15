@@ -358,7 +358,7 @@ const OperationTracker = () => {
   };
   
   return (
-    <div className="flex flex-col h-screen bg-slate-900 text-white sm:w-[1600px] w-full">
+    <div className="flex flex-col h-screen bg-slate-900 text-white sm:w-[2000px] w-full">
       {/* Header */}
       <div className="bg-gradient-to-r from-violet-800 to-blue-800 px-6 py-4 shadow-xl">
         <h1 className="text-2xl font-bold">Maritime Operation Trackerrrrrrrrrrrrrrr</h1>
