@@ -366,7 +366,7 @@ const OperationTracker = () => {
       
       <div className="flex flex-1 overflow-hidden w-full">
         {/* Left panel - Operation Steps */}
-       <div className="w-64 bg-slate-800 shadow-xl overflow-y-auto">
+       <div className="bg-slate-800 shadow-xl overflow-y-auto">
 
           <div className="p-6">
             <h2 className="text-xl font-bold mb-6 text-center">Operation Status</h2>
